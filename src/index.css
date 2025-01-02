@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wdth,wght@50..200,200..900&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: grid;
+  place-content: center;
+  height: 100vh;
+}
+
+.mage {
+  @apply relative bg-[url("./assets/images/background-mobile.png")] md:bg-[url("./assets/images/background-tablet.png")] mx-auto  h-[97vh] w-[789px] lg:bg-[url("./assets/images/background-desktop.png")];
+}
+.Wform {
+  @apply w-[60%] mx-auto;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.texting {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  color: white;
+}
