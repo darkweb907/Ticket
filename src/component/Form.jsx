@@ -1,6 +1,8 @@
 import { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 
 const Form = () => {
+    const Navigate= useNavigate()
   const [Word, setWord] = useState({
     avatar: "",
     name: "",
@@ -10,7 +12,8 @@ const Form = () => {
   const justSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted");
-    console.log(Word);
+    console.log(Word.github);
+    Navigate("/display" , {state: {message: Word}})
   };
 
   const textChange = (e) => {

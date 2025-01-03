@@ -1,6 +1,8 @@
 import Top from "../assets/images/pattern-squiggly-line-top.svg";
+import { Routes, Route } from "react-router-dom";
 import Form from "./Form";
 import Header from "./Header";
+import Details from "./Details";
 
 const Background = () => {
   return (
@@ -28,7 +30,10 @@ const Background = () => {
       <div className="text absolute top-0 w-full ">
         <div className="texting mt-[2rem] md:mt-0 ">
           <Header />
-          <Form />
+          <Routes>
+            <Route path="/" element={<Form />} />
+            <Route path="/display" element={<Details />} />
+          </Routes>
         </div>
       </div>
     </div>
