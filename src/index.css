@@ -13,10 +13,10 @@ body {
 }
 
 .mage {
-  @apply relative bg-[url("./assets/images/background-mobile.png")] md:bg-[url("./assets/images/background-tablet.png")] mx-auto  h-[97vh] w-[789px] lg:bg-[url("./assets/images/background-desktop.png")];
+  @apply relative bg-[url("./assets/images/background-mobile.png")] md:bg-[url("./assets/images/background-tablet.png")] mx-auto  h-[97vh] max-w-[789px] lg:bg-[url("./assets/images/background-desktop.png")];
 }
 .Wform {
-  @apply w-[60%] mx-auto;
+  @apply md:w-[70%] mx-auto;
 }
 img {
   max-width: 100%;
@@ -31,4 +31,7 @@ img {
   text-align: center;
   align-items: center;
   color: white;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.1);
 }
