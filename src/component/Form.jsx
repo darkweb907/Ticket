@@ -24,7 +24,7 @@ const Form = () => {
   };
   return (
     <>
-      <section className="form mt-7 md:mt-2 text-center sm:px-[2rem] md:px-0">
+      <section className="form mt-12 md:mt-4 text-center sm:px-[2rem] md:px-0">
         <h1 className="text-base px-3 sm:px-8 md:px-0 md:text-2xl lg:text-3xl Wform font-extrabold">
           Your Journey to Coding Conf 2025 Starts Here!
         </h1>

@@ -8,7 +8,7 @@ const Details = () => {
   console.log(message.avatar);
 
   return (
-    <div className="display-text mt-6  md:mt-5 px-6 md:px-0 custom  sm:max-w-[60%]">
+    <div className="flex flex-col h-[65vh]  justify-center display-text mt-6  md:mt-5 px-6 md:px-0 custom  sm:max-w-[60%]">
       <h1 className=" text-xl md:text-2xl LG:text-3xl font-extrabold md:mb-1 mb-8">
         Congrats,{" "}
         <span className="text-GOrange text-gradient"> {message.name} </span>{" "}
