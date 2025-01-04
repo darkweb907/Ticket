@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 
 const Form = () => {
-    const Navigate= useNavigate()
+  const Navigate = useNavigate();
   const [Word, setWord] = useState({
     avatar: "",
     name: "",
@@ -13,7 +13,7 @@ const Form = () => {
     e.preventDefault();
     console.log("Form Submitted");
     console.log(Word.github);
-    Navigate("/display" , {state: {message: Word}})
+    Navigate("/display", { state: { message: Word } });
   };
 
   const textChange = (e) => {
@@ -83,7 +83,7 @@ const Form = () => {
           </div>
           <div className="avatar mt-3">
             <input
-              className="w-full bg-BOrange py-1 rounded-md"
+              className="w-full bg-BOrange py-1 rounded-md cursor-pointer"
               type="submit"
               value="Generate my Ticket"
             />

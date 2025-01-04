@@ -1,8 +1,11 @@
-import Top from "../assets/images/pattern-squiggly-line-top.svg";
 import { Routes, Route } from "react-router-dom";
 import Form from "./Form";
 import Header from "./Header";
 import Details from "./Details";
+import Top from "../assets/images/pattern-squiggly-line-top.svg";
+import Line from "../assets/images/pattern-squiggly-line-bottom.svg";
+import Pattern from "../assets/images/pattern-lines.svg";
+import Circle from "../assets/images/pattern-circle.svg";
 
 const Background = () => {
   return (
@@ -14,17 +17,13 @@ const Background = () => {
       />
       <img
         className="bottom w-[57%] left-0 absolute bottom-[-69px] "
-        src="./src/assets/images/pattern-squiggly-line-bottom.svg"
+        src={Line}
         alt="not descover"
       />
-      <img
-        className=" "
-        src="./src/assets/images/pattern-lines.svg"
-        alt="not descover"
-      />
+      <img src={Pattern} alt="not descover" />
       <img
         className="hidden md:block absolute top-[50%] left-[50%] md:w-[15%] "
-        src="./src/assets/images/pattern-circle.svg"
+        src={Circle}
         alt="not descover"
       />
       <div className="text absolute top-0 w-full ">

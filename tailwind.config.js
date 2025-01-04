@@ -16,7 +16,7 @@ export default {
         GOrange: "linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%))",
       },
       backgroundImage: {
-        GOrange: "linear-gradient(hsl(7, 86%, 67%) to hsl(0, 0%, 100%))",
+        GOrange: "linear-gradient(to right, hsl(7, 86%, 67%), hsl(0, 0%, 100%))",
       },
     },
   },
