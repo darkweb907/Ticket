@@ -1,11 +1,10 @@
 import { useLocation } from "react-router-dom";
 import mage from "../assets/images/logo-full.svg";
 import Ticket from "../assets/images/pattern-ticket.svg";
-import logoA from "../assets/images/image-avatar.jpg";
+
 const Details = () => {
   const location = useLocation();
   const { message } = location.state || {}; // Retrieve the passed state
-  console.log(message.avatar);
 
   return (
     <div className="flex flex-col h-[65vh]  justify-center display-text mt-6  md:mt-5 px-6 md:px-0 custom  sm:max-w-[60%]">
@@ -27,7 +26,11 @@ const Details = () => {
             <p className="text-xs">Jan 31, 2025 / Austin, TX</p>
           </div>
           <div className="logoA flex mt-3 items-center gap-4 px-1 ">
-            <img className="w-[20%] rounded-md" src={logoA} alt="logoA" />
+            <img
+              className="w-[20%] rounded-md"
+              src={message.avatar}
+              alt="logoA"
+            />
             <div className="flex flex-col">
               <h2>{message.name}</h2>
               <p>{message.github}</p>

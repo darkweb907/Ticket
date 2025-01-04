@@ -1,3 +1,4 @@
+import InputForm from "./InputForm"; // Adjust the path as necessary
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -12,7 +13,6 @@ const Form = () => {
   const justSubmit = (e) => {
     e.preventDefault();
     console.log("Form Submitted");
-    console.log(Word.github);
     Navigate("/display", { state: { message: Word } });
   };
 
@@ -36,15 +36,7 @@ const Form = () => {
           onSubmit={justSubmit}
         >
           <div className="avatar md:mt-3">
-            <label htmlFor="avatar">Upload Avatar</label>
-            <input
-              onChange={textChange}
-              value={Word.avatar}
-              className="block  w-full  py-1 pl-2 rounded-md"
-              id="avatar"
-              type="text"
-              name="avatar"
-            />
+            <InputForm setWord={setWord} />
           </div>
           <div className="avatar md:mt-3">
             <label htmlFor="name">Full Name</label>
@@ -77,7 +69,7 @@ const Form = () => {
               className="block  w-full py-1 pl-2 rounded-md"
               id="github"
               type="email"
-              placeholder="@yourgmail.com"
+              placeholder="name@yourgmail.com"
               name="github"
             />
           </div>

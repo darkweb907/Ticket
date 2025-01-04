@@ -9,7 +9,7 @@ import Circle from "../assets/images/pattern-circle.svg";
 
 const Background = () => {
   return (
-    <div className="mage overflow-hidden">
+    <div className="mage md:overflow-hidden">
       <img
         className="top w-[35%] absolute right-0 top-5 "
         src={Top}
