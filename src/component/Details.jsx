@@ -1,5 +1,6 @@
 import { useLocation } from "react-router-dom";
 import mage from "../assets/images/logo-full.svg";
+import Ticket from "../assets/images/pattern-ticket.svg";
 import logoA from "../assets/images/image-avatar.jpg";
 const Details = () => {
   const location = useLocation();
@@ -19,11 +20,7 @@ const Details = () => {
         and will send updates in the run up to the event.
       </p>
       <div className="body ticket ">
-        <img
-          className="md:w-[70%]"
-          src="./src/assets/images/pattern-ticket.svg"
-          alt="hello"
-        />
+        <img className="md:w-[70%]" src={Ticket} alt="hello" />
         <div className="detail-text  absolute md:left-[5rem] md:top-[4px] px-3">
           <div className="flex flex-col gap-2  ">
             <img className="w-[65%] mt-3" src={mage} alt="logo" />

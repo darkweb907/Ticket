@@ -1,7 +1,9 @@
+import Logo from "../assets/images/logo-full.svg";
+
 const Header = () => {
   return (
     <div className="flex justify-center logo mt-3">
-      <img className="w-[65%]" src="./src/assets/images/logo-full.svg" alt="" />
+      <img className="w-[65%]" src={Logo} alt="Logo" />
     </div>
   );
 };
