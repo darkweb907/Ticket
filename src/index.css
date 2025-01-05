@@ -13,7 +13,7 @@ body {
 }
 
 .mage {
-  @apply relative bg-[url("./assets/images/background-mobile.png")] md:bg-[url("./assets/images/background-tablet.png")] mx-auto  h-[100vh] max-w-[789px] lg:bg-[url("./assets/images/background-desktop.png")];
+  @apply relative bg-[url("./assets/images/background-mobile.png")] md:bg-[url("./assets/images/background-tablet.png")] mx-auto h-[130vh]  md:h-[120vh] max-w-[789px] lg:bg-[url("./assets/images/background-desktop.png")];
 }
 .text-gradient {
   @apply bg-GOrange;

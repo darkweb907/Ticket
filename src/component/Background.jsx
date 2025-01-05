@@ -9,30 +9,32 @@ import Circle from "../assets/images/pattern-circle.svg";
 
 const Background = () => {
   return (
-    <div className="mage md:overflow-hidden">
-      <img
-        className="top w-[35%] absolute right-0 top-5 "
-        src={Top}
-        alt="not descover"
-      />
-      <img
-        className="bottom w-[57%] left-0 absolute bottom-[-69px] "
-        src={Line}
-        alt="not descover"
-      />
-      <img src={Pattern} alt="not descover" />
-      <img
-        className="hidden md:block absolute top-[50%] left-[50%] md:w-[15%] "
-        src={Circle}
-        alt="not descover"
-      />
-      <div className="text absolute top-0 w-full ">
-        <div className="texting mt-[2rem] md:mt-0 ">
-          <Header />
-          <Routes>
-            <Route path="/" element={<Form />} />
-            <Route path="/display" element={<Details />} />
-          </Routes>
+    <div className=" h-screen w-full ">
+      <div className="mage overflow-hidden">
+        <img
+          className="top w-[35%] absolute right-0 top-5 "
+          src={Top}
+          alt="not descover"
+        />
+        <img
+          className="bottom w-[57%] left-0 h-[50vh] absolute bottom-[-69px] "
+          src={Line}
+          alt="not descover"
+        />
+        <img src={Pattern} alt="not descover" />
+        <img
+          className="hidden md:block absolute top-[50%] left-[50%] md:w-[15%] "
+          src={Circle}
+          alt="not descover"
+        />
+        <div className="text absolute top-0 w-full ">
+          <div className="texting mt-[2rem] md:mt-0 ">
+            <Header />
+            <Routes>
+              <Route path="/" element={<Form />} />
+              <Route path="/display" element={<Details />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </div>
