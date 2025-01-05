@@ -55,7 +55,7 @@ const InputForm = ({ setWord }) => {
           <img
             src={avatar}
             alt="Uploaded Preview"
-            className="w-[23%] rounded-md h-[23%] object-cover border border-gray-300"
+            className="w-[35%] rounded-md h-[22vh] object-cover border border-gray-300"
           />
           <button
             className="mt-4 px-4 py-2 bg-red-500 text-white rounded-md"
