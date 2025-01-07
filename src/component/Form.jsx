@@ -69,7 +69,7 @@ const Form = () => {
               className="block  w-full py-1 pl-2 rounded-md"
               id="github"
               type="email"
-              placeholder="name@yourgithub.com"
+              placeholder="github username"
               name="github"
             />
           </div>
