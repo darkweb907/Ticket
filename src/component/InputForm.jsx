@@ -39,7 +39,7 @@ const InputForm = ({ setWord }) => {
               </svg>
             </div>
             <p className="mb-2 text-sm text-gray-600">
-              Drag and drop or click to upload
+              profile picture or your photo
             </p>
           </div>
           <input
